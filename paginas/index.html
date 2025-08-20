@@ -10,27 +10,28 @@
 
     <title>Introdução ao HTML</title>
 
-    <link rel="shortcut icon" href="./BMW-Série-3-Azul-Portimão.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="../arquivos/BMW-Serie-3-Azul.pdf" type="image/x-icon">
     <!--Tag que icorpora a logo e exibe na guia de endereço-->
 
     <!--atributo rel indica relação-->
     <!--atributo hrel indica referencia, ou seje, a localização-->
-    <link rel="stylesheet" href="./style.css"> <!--Linkendo o css de foram exeterna-->
+    <link rel="stylesheet" href="../estilizacoes/style.css"> <!--Linkendo o css de foram exeterna-->
 
-   
+
 </head>
 
 <body>
 
-    <h1 style="">Tela Principal sobre a BMW</h1><!--H1 é o titulo principal, por boas praticas chamamos somente uma vez-->
-  
-    <header id="cabecalho" >
-        <img id="logo"src="BMW-Série-3-Azul-Portimão.jpg" alt="imagem de uma BMW azul.">
+    <h1 style="">Tela Principal sobre a BMW</h1>
+    <!--H1 é o titulo principal, por boas praticas chamamos somente uma vez-->
+
+    <header id="cabecalho">
+        <img id="logo" src="../arquivos/BMW-Série-3-Azul-Portimão.jpg" alt="imagem de uma BMW azul.">
 
         <nav>
             <a href="https://www.youtube.com/watch?v=KKfeliLbK6Q">Youtube</a>
-            <a href="index.html">Inicial</a>
-            <a href="./BMW-Serie-3-Azul.pdf" download> Saiba mais</a>
+            <a href="../paginas/index.html">Inicial</a>
+            <a href="../arquivos/BMW-Serie-3-Azul.pdf" download> Saiba mais</a>
 
         </nav>
 
@@ -41,37 +42,53 @@
         <section>
             <h2>Modelos BMW</h2>
 
-            <!--Card produto-->
-            <div id ="produto">
-                <img src="BMW Preta.jpg" alt="Modelo Branco da BMW X8" width="300" height="250">
-                <h3>BMW X8</h3>
-                <span>845.000,00</span>
+            <div id="container-flex-produtos">
+
+                <!--Card produto-->
+                <article class="card-produto">
+                    <img src="../arquivos/BMW Preta.jpg" alt="Modelo Branco da BMW X8">
+                    <h3>BMW X8</h3>
+                    <span>845.000,00</span>
+                </article>
+
+                <!--Card produto-->
+                <article class="card-produto">
+                    <img src="../arquivos/BMW Preta.jpg" alt="Modelo Branco da BMW X8">
+                    <h3>BMW X8</h3>
+                    <span>845.000,00</span>
+                </article>
+
+                <!--Card produto-->
+                <article class="card-produto">
+                    <img src="../arquivos/BMW Preta.jpg" alt="Modelo Branco da BMW X8">
+                    <h3>BMW X8</h3>
+                    <span>845.000,00</span>
+                </article>
+
             </div>
+
         </section>
 
-        <section>
+        <section id="container-flex-suporte">
             <h2>Suporte ao cliente</h2>
             <!--tag form ed fourmulário-->
-            <form>
+            <form >
                 <label for="campo-nomecompleto">Nome completo:</label>
-                <input type="text" placeholder="Digite seu nome completo" id="campo-nomecompleto" required>
+                <input class="form_campos_inupt" type="text" placeholder="Digite seu nome completo" id="campo-nomecompleto" required>
 
-                <br /><!--quebra linha-->
 
                 <label for="campo-email">E-mail:</label>
-                <input type="email" name="" id="campo-email" required>
+                <input class="form_campos_inupt" type="email" name="" id="campo-email" required>
 
-                <br /><!--quebra linha-->
 
                 <label for="campo-senha">Senha:</label>
-                <input type="password" name="" id="campo-senha" required>
+                <input class="form_campos_inupt" type="password" name="" id="campo-senha" required>
 
-                <br /><!--quebra linha-->
 
                 <label for="campo-upload">Upload:</label>
-                <input type="file" name="" id="campo-upload">
+                <input class="form_campos_inupt" type="file" name="" id="campo-upload">
 
-                </br>
+
 
                 <label for="">Estado</label>
                 <select name="" id="" required>
@@ -107,30 +124,22 @@
                     <option value="TO">TO</option>
                 </select>
 
-                </br>
-
-                <input type="checkbox" name="" id="">
+                <input class="form_campos_inupt" type="checkbox" name="" id="">
                 <label for="">Li e concordo com os termos.</label>
-
-                </br>
 
                 <label for="">Sexo:</label>
 
-                </br>
-
                 <label for="">Feminino</label>
-                <input type="radio" name="opcao-genero" id="" required value="Feminino">
+                <input class="form_campos_inupt" type="radio" name="opcao-genero" id="" required value="Feminino">
 
                 <label for="">Masculino</label>
-                <input type="radio" name="opcao-genero" id="" required value="Masculino">
+                <input class="form_campos_inupt" type="radio" name="opcao-genero" id="" required value="Masculino">
 
-                </br>
+
                 <!--atributo required torna obrigatório-->
 
                 <label for="">Descrição:</label>
                 <textarea name="" id="" required></textarea>
-
-                </br>
 
                 <button type="submit">Enviar</button>
                 <button type="reset">Limpar</button>
