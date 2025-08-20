@@ -1,0 +1,64 @@
+/* Seletor global - * indica todos os elememtps*/
+* {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;/*Espaço externo*/
+    padding: 0;/*Espaço interno*/
+}
+
+#cabecalho {
+    background-color: #4b42ff;
+    display: flex;/*ativo o flexbol para poder alinhar os meus elementos filhos*/
+    justify-content: space-between;/*alinha os filhos no sentido do flex*/
+    align-items: center; /*alinha os filhos no sentido contrario do flex*/
+}
+
+#cabecalho > img {
+    width: 40px;/*larura*/
+    height: 40px;/*altura*/
+}
+
+#cabecalho > nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;/*espaço entre os elementos*/
+}
+
+#cabecalho > nav > a {
+    color: #000000;
+    text-decoration: none;/*a decoração do texto, neste caso, o link*/
+    font-size: 16px;/*tamanho da fonte*/
+}
+
+#produto  {
+    background-color: #d9d9d9;
+    display: flex;
+    flex-direction: inherit;
+    align-items: center;
+    justify-content:
+}
+
+#produto  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#produto  > img {
+    width: 200px;
+    height: 200px;
+
+
+
+}
+#produto  > h3 {
+    font-size: 20px;
+    color: floralwhite;
+    
+}
+#produto > span {
+    font-size: 20px;
+    color: floralwhite;
+    
+
+}     
